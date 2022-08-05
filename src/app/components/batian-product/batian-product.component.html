@@ -1,0 +1,20 @@
+<figure class="card card-product">
+	<div class="img-wrap"><img src="https://avatars.githubusercontent.com/u/108116740?s=40&v=4"></div>
+	<figcaption class="info-wrap">
+			<h4 class="title">{{batianProduct.name}}</h4>
+			<p class="desc">{{batianProduct.description}}</p>
+			<div class="rating-wrap">
+				<div class="label-rating text-orange">100 reviews</div>
+				<div class="label-rating">2K orders </div>
+			</div> <!-- rating-wrap.// -->
+	</figcaption>
+	<div class="bottom-wrap d-flex">
+		<a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+		<div class="price-wrap h5">
+			<span class="price-new text-danger">Ksh {{batianProduct.price}}</span> <del class="price-old">Ksh old</del>
+		</div> <!-- price-wrap.// -->
+	</div> <!-- bottom-wrap.// -->
+	<div class="card-footer bg-dark text-warning font-italic">
+		({{batianProduct.regDate | date: 'dd MMM yyyy'}})
+	</div>
+</figure>

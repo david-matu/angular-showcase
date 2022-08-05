@@ -1,0 +1,12 @@
+<div class="card shadow shadow-lg w-100 row">
+	<div class="card-title">
+		<strong>Dave ::: Shop View</strong>
+	</div>
+	<div class="card-body bg-light container-fluid">
+		<div class="container-fluid row" *ngFor="let product of batianProductList">
+			<div class="col-md-4">
+				<batian-product [batianProduct]="product"></batian-product>
+			</div>
+		</div>
+	</div>
+</div>

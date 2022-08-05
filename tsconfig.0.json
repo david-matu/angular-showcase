@@ -1,11 +1,7 @@
-// This tsconfig is used in the TypeScript
-// configuration guide (../guide/typescript-configuration.md) 
-// to display the latest default configuration
-// Note: Update with every major release to the latest default
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,

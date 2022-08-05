@@ -11,6 +11,8 @@ import { ProductAlertsComponent } from './product-alerts/product-alerts.componen
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
+import { BatianProductComponent } from './components/batian-product/batian-product.component';
+import { ShelfComponent } from './components/shelf/shelf.component';
 
 
 @NgModule({
@@ -19,10 +21,11 @@ import { ShippingComponent } from './shipping/shipping.component';
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: 'batian-product-list', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
+      { path: 'batian-product-list', component: ShelfComponent },
     ])
   ],
   declarations: [
@@ -32,7 +35,9 @@ import { ShippingComponent } from './shipping/shipping.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     CartComponent,
-    ShippingComponent
+    ShippingComponent,
+    BatianProductComponent,
+    ShelfComponent
   ],
   bootstrap: [
     AppComponent
